@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <div>
-            <h3>Navbar</h3>
-        </div>
+        <nav className="navbar navbar-expand-lg navbar-dark">
+            <Link to="/" className="navbar-brand">KuicFlix</Link>
+        </nav>
     )
 }

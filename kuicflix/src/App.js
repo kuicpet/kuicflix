@@ -10,14 +10,13 @@ import Loading from "./Components/Loading";
 class App extends Component  {
   render() {
     return (
-      <React.Fragment>
-        <h1>kuicFlix</h1>
+      <div className="container-fluid">
         <Navbar/>
         <Banner/>
         <Row/>
         <Loading/>
         <Modal/>
-      </React.Fragment>
+      </div>
     );
   }
 }
