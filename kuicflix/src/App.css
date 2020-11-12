@@ -19,6 +19,7 @@ html {
   padding: 0;
 }
 .navbar {
+  z-index: 10;
   transition: all 0.5s ease-in;
   background-image: linear-gradient(
     0deg,
@@ -29,10 +30,30 @@ html {
 }
 .navbar-brand {
   color: red !important;
+  font-weight: bold !important;
 }
 .loader {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+@media only screen and (max-width: 400px) {
+  .posters {
+    display: block;
+  }
+}
+.poster {
+  width: 100%;
+  object-fit: contain;
+  padding: 1px;
+}
+.poster:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
